@@ -1,7 +1,9 @@
 {
-  "name": "example-hello-world",
+  "name": "portfolio",
   "dependencies": {
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "three": "0.134",
+    "troisjs": "^0.3.4"
   },
   "scripts": {
     "dev": "nuxt",
