@@ -17,16 +17,11 @@
 </template>
 
 <script>
+import { Box, Camera, LambertMaterial, PointLight, Renderer, Scene } from 'troisjs';
 export default {
   head: {
     title: 'Home page'
   },
-  mounted() {
-    const renderer = this.$refs.renderer;
-    const box = this.$refs.box.mesh;
-    renderer.onBeforeRender(() => {
-      box.rotation.x += 0.01;
-    });
-  },
+    components: { Box, Camera, LambertMaterial, PointLight, Renderer, Scene },
 }
 </script>
