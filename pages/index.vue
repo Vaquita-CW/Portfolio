@@ -4,24 +4,21 @@
     <NLink to="/about">
       About Page
     </NLink>
+    <client-only>
+      <Background/>
+    </client-only>
   </div>
-  <Renderer ref="renderer">
-    <Camera :position="{ z: 10 }" />
-    <Scene>
-      <PointLight :position="{ y: 50, z: 50 }" />
-      <Box ref="box" :rotation="{ y: Math.PI / 4, z: Math.PI / 4 }">
-        <LambertMaterial />
-      </Box>
-    </Scene>
-  </Renderer>
 </template>
 
 <script>
-import { Box, Camera, LambertMaterial, PointLight, Renderer, Scene } from 'troisjs';
+import Background from '../components/Background.vue';
+
 export default {
-  head: {
-    title: 'Home page'
-  },
-    components: { Box, Camera, LambertMaterial, PointLight, Renderer, Scene },
+    head: {
+        title: "Home page"
+    },
+    components: {
+      Background: process.browser ? () => import("~/component/Background.vue") : null,
+    }
 }
 </script>

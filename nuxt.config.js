@@ -1,4 +1,5 @@
 export default {
-  target: 'static'
+  target: 'static',
+  components: true
 }
 
