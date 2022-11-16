@@ -15,6 +15,11 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+export default {
+    head: {
+        title: "Home page",
+    }
+}
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
@@ -61,9 +66,4 @@ function animate() {
 }
 
 animate();
-export default {
-    head: {
-        title: "Home page",
-    }
-}
 </script>
