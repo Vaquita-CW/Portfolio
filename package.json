@@ -2,7 +2,8 @@
   "name": "portfolio",
   "dependencies": {
     "nuxt": "latest",
-    "three": "^0.146.0"
+    "three": "0.134",
+    "troisjs": "^0.3.4"
   },
   "scripts": {
     "dev": "nuxt",
