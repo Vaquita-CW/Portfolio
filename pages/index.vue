@@ -18,7 +18,7 @@ export default {
         title: "Home page"
     },
     components: {
-      Background: process.browser ? () => import("~/component/Background.vue") : null,
+      Background
     }
 }
 </script>
